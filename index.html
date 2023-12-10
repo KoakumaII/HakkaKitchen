@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>首頁</title>
+    <style>
+        /* CSS樣式 */
+        body {
+            background-image: url("下午 09:48 2023/12/3");
+            background-size: cover;
+        }
+        #header {
+            background-image: url("images/bg-header.jpg");
+            height: 300px;
+	 background-size: cover;
+	
+
+        }
+        #content {
+            text-align: center;
+            margin-top: 50px;
+        }
+        #slideshow {
+            width: 1600px;
+            height: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        #slideshow img {
+            width: 100%;
+            height: 100%;
+	 animation: fade 5s infinite;
+        }
+        
+        @keyframes fade {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            75% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+
+        #footer {
+            background-image: url("images/bg-footer.jpg");
+            height: 200px;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="content">
+        <h1>客家小創饗文創網站，在此向各位說聲「台嘎好」!</h1>
+
+      
+        <div id="slideshow">
+            <img src="images/1.jpg" alt="大圖片1">
+            <img src="images/3.jpg" alt="大圖片2">
+            <img src="images/3.jpg" alt="大圖片3">
+
+
+	
+        </div>
+	<h2>歡迎來到客家小創饗!!我們的文創網站以客家傳統美食：炒肉為原點，為您呈現一場美食與文創的絕妙結合！<br>
+我們的網站提供正宗的客家炒肉作法，讓您在家也能輕鬆體驗道地的客家風味。<br>
+不僅如此，我們的網站更加入了吉祥物創作，每一個可愛的吉祥物都代表著我們對於美食與文化的熱愛，<br>
+讓您在探索的過程中感受到濃厚的客家文化與情感。<br>
+而在我們的購物網站中，您更有機會購買到各種獨特的文創小物，<br>
+這些小物品不僅具有實用性，更是集結了客家文化的精華，<br>
+讓您可以將這份美好帶回家，與親朋好友一同分享。<br>
+還在猶豫什麼呢？趕快按下底下的按鈕，跟著我們一同展開這場美食與文創的冒險吧！<br>
+讓味蕾和心靈同時得到滿足，開啟屬於客家美食的奇妙之旅!<br></h2>
+    </div>
+<center>
+	<a href="網一"><img src="images/11.png"width="250"></a>
+	<a href="網二"><img src="images/12.png"width="250"></a>
+	<a href="網三"><img src="images/13.png"width="250"></a>
+	<a href="網四"><img src="images/14.png"width="250"></a><br>
+
+
+ <h3><a href="https://johnultraking1.wordpress.com">手機版首頁</a><br> </h3>
+</center>
+
+    <div id="footer"></div>
+
+    <script>
+        // JavaScript代碼
+        var slideshow = document.getElementById("slideshow");
+        var images = slideshow.getElementsByTagName("img");
+        var currentIndex = 0;
+        
+        setInterval(function() {
+            images[currentIndex].style.display = "none";
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].style.display = "block";
+        }, 5000);
+    </script>
+</body>
+</html>3
